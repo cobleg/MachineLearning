@@ -2,15 +2,16 @@
 DLNNs fit parameters using optimisation algorithms.
 
 ## Gradient descent
-The equation is:
+The equations are:
 
 $$ w_{s+1} = w_s-\alpha \times \frac{\delta}{\delta w}J(w,b)$$
 
-$$ b_{s+1} = b_s-\alpha \times \frac{\delta}{\delta w}J(w,b) $$
+$$ b_{s+1} = b_s-\alpha \times \frac{\delta}{\delta b}J(w,b) $$
 where:
 $w_s$ is the weight (or slope) parameter at step $s$
 $\alpha$ is the learning rate
 $J(w,b)$ is the loss (or cost) function, which is a function of the weight ($w$) and bias parameters ($b$). 
+
 
 
 
