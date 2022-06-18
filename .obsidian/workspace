@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "7f93314eb750c5e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "831daf980e9c7329",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Start here.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1d4e1dbafd14b6f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1870b21ff6ecc52c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7573f5443819af6e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f08f648849d4a0d3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "180789a202106d9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "20893831440f4bde",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "622855eb7251d8a3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Start here.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "831daf980e9c7329",
+  "lastOpenFiles": [
+    "Start here.md",
+    "MachineLearning/Start here.md"
+  ]
+}
