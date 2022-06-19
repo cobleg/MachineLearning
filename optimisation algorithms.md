@@ -18,6 +18,14 @@ The learning rate ($\alpha$) has a big impact on the efficiency of the machine l
 
 If stuck at a local minimum (as distinct to a global minimum), it will be necessary to jump, possibly by changing the parameters.
 
+Assuming the loss function:
+
+$$ J(w,b) = \frac{1}{2}\Sigma_{i=1}^{m}(f(_{w,b}(x^{(i)})-y^{(i)})^2 $$
+The gradient descent equations are:
+
+$$ w_{s+1} = w_s-\alpha \times \frac{\partial}{\partial w}J(w,b)$$
+
+
 # Code
 ## Stochastic gradient descent
 

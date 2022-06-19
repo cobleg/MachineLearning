@@ -1,6 +1,16 @@
 # Overview
 Given DLNNs rely on optimisation algorithms to fit parameters, it is necessary to define loss (aka cost) functions.
 
+One common loss function is 
+
+$$ J(w,b) = \frac{1}{2}\Sigma_{i=1}^{m}(f(_{w,b}(x^{(i)})-y^{(i)})^2 $$
+where
+$m$ is the number of observations
+$f_{w,b}(x)$ is a function describing the relationship between input variable $x$ and output variable $y$. 
+$w$ is the slope parameter
+$b$ is the bias parameter
+$y$ is the output variable
+
 # Code
 ## Squared loss function
 The squared difference between the predicted and actual. This is used for fitting linear regression models.
