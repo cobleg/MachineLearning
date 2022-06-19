@@ -40,6 +40,53 @@ $$ w_{s+1} = w_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}x^{(i)}(wx^{(i)}+b-y^{
 $$ b_{s+1} = b_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}(wx^{(i)}+b-y^{(i)}) $$} stop when change in $w$ and $b$ are close to zero (e.g. less than 0.001)
 
 # Code
+
+## Gradient linear descent
+
+```Python
+#Function to calculate the cost
+def compute_cost(x, y, w, b):
+   
+    m = x.shape[0] 
+    cost = 0
+    
+    for i in range(m):
+        f_wb = w * x[i] + b
+        cost = cost + (f_wb - y[i])**2
+    total_cost = 1 / (2 * m) * cost
+
+    return total_cost
+
+def compute_gradient(x, y, w, b): 
+    """
+    Computes the gradient for linear regression 
+    Args:
+      x (ndarray (m,)): Data, m examples 
+      y (ndarray (m,)): target values
+      w,b (scalar)    : model parameters  
+    Returns
+      dj_dw (scalar): The gradient of the cost w.r.t. the parameters w
+      dj_db (scalar): The gradient of the cost w.r.t. the parameter b     
+     """
+    
+    # Number of training examples
+    m = x.shape[0]    
+    dj_dw = 0
+    dj_db = 0
+    
+    for i in range(m):  
+        f_wb = w * x[i] + b 
+        dj_dw_i = (f_wb - y[i]) * x[i] 
+        dj_db_i = f_wb - y[i] 
+        dj_db += dj_db_i # cumultive sum
+        dj_dw += dj_dw_i # cumulative sum
+    dj_dw = dj_dw / m # calculate the average 
+    dj_db = dj_db / m # calculate the average
+        
+    return dj_dw, dj_db
+```
+
+
 ## Stochastic gradient descent
 
 ```python
