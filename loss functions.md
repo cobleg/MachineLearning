@@ -1,7 +1,7 @@
 # Overview
 Given DLNNs rely on optimisation algorithms to fit parameters, it is necessary to define loss (aka cost) functions.
 
-One common loss function is 
+One common loss function is the Squared Error Loss function:
 
 $$ J(w,b) = \frac{1}{2}\Sigma_{i=1}^{m}(f(_{w,b}(x^{(i)})-y^{(i)})^2 $$
 where
@@ -10,6 +10,8 @@ $f_{w,b}(x)$ is a function describing the relationship between input variable $x
 $w$ is the slope parameter
 $b$ is the bias parameter
 $y$ is the output variable
+
+Note that this cost function
 
 # Code
 ## Squared loss function

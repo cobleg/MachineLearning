@@ -18,6 +18,8 @@ The learning rate ($\alpha$) has a big impact on the efficiency of the machine l
 
 If stuck at a local minimum (as distinct to a global minimum), it will be necessary to jump, possibly by changing the parameters.
 
+## Gradient descent for a linear model
+
 Assuming the loss function:
 
 $$ J(w,b) = \frac{1}{2}\Sigma_{i=1}^{m}(f(_{w,b}(x^{(i)})-y^{(i)})^2 $$
@@ -27,8 +29,15 @@ $f(_{w,b}(x^{(i)})=wx^{(i)}+b$
 
 The gradient descent equations are by the [chain rule](https://en.wikipedia.org/wiki/Chain_rule):
 
-$$ w_{s+1} = w_s-\alpha \times \frac{1}{m}\Sigmax^{(i)}(wx^{(i)}+b-y^{(i)}) $$
+$$ w_{s+1} = w_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}x^{(i)}(wx^{(i)}+b-y^{(i)}) $$
+$$ b_{s+1} = b_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}(wx^{(i)}+b-y^{(i)}) $$
 
+### Gradient descent algorithm
+With the equations defined, the gradient descent algorithm is:
+
+repeat until convergence {
+$$ w_{s+1} = w_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}x^{(i)}(wx^{(i)}+b-y^{(i)}) $$
+$$ b_{s+1} = b_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}(wx^{(i)}+b-y^{(i)}) $$} stop when change in $w$ and $b$ are close to zero (e.g. less than 0.001)
 
 # Code
 ## Stochastic gradient descent
