@@ -9,10 +9,10 @@ $$ w_{s+1} = w_s-\alpha \times \frac{\delta}{\delta w}J(w,b)$$
 $$ b_{s+1} = b_s-\alpha \times \frac{\delta}{\delta b}J(w,b) $$
 where:
 $w_s$ is the weight (or slope) parameter at step $s$
-$\alpha$ is the learning rate
-$J(w,b)$ is the loss (or cost) function, which is a function of the weight ($w$) and bias parameters ($b$). 
+$\alpha >0$ is the learning rate
+$J(w,b)$ is the [[loss function]] (or cost function) , which is a function of the weight ($w$) and bias parameters ($b$). 
 
-
+The learning rate ($\alpha$) has a big impact on the efficiency of the machine learning algorithm. If too small, achieving convergence for a machine learning model will take a long time (i.e. many #epochs).  If too large, then convergence in the macine learning algorithm may not converge at all.
 
 
 # Code
