@@ -21,9 +21,13 @@ If stuck at a local minimum (as distinct to a global minimum), it will be necess
 Assuming the loss function:
 
 $$ J(w,b) = \frac{1}{2}\Sigma_{i=1}^{m}(f(_{w,b}(x^{(i)})-y^{(i)})^2 $$
-The gradient descent equations are:
 
-$$ w_{s+1} = w_s-\alpha \times \frac{\partial}{\partial w}J(w,b)$$
+where 
+$f(_{w,b}(x^{(i)})=wx^{(i)}+b$
+
+The gradient descent equations are by the [chain rule](https://en.wikipedia.org/wiki/Chain_rule):
+
+$$ w_{s+1} = w_s-\alpha \times \frac{1}{m}\Sigmax^{(i)}(wx^{(i)}+b-y^{(i)}) $$
 
 
 # Code
