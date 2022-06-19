@@ -11,7 +11,7 @@ $w$ is the slope parameter
 $b$ is the bias parameter
 $y$ is the output variable
 
-Note that this cost function
+Note that this cost function only has a single global minimum and no local minima. 
 
 # Code
 ## Squared loss function
