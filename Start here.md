@@ -8,7 +8,8 @@ Deep Learning Neural Networks (DLNN) require set up of the data and scripts to c
 Key steps are:
 1. Set up the enivronment and subdirectories/folders
 2. Prepare input data sets
-	1. [[load data]] 
+	1. [[Create or obtain data]] 
+	2. [[load data]] 
 3. Write script files
 4. Execute and write output files to disk
 
