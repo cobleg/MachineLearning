@@ -115,7 +115,7 @@ plt.xlabel('Size (1000 sqft)')
 plt.show()
 ```
 
-Define a linear function
+Define a linear function based on just one #feature. 
 
 ```Python
 
@@ -135,6 +135,39 @@ def compute_model_output(x, w, b):
         f_wb[i] = w * x[i] + b
         
     return f_wb
+
+# construct inp
+X_train = np.array([[2104, 5, 1, 45], [1416, 3, 2, 40], [852, 2, 1, 35]])
+y_train = np.array([460, 232, 178])
+
+# get a row from our training data
+x_vec = X_train[0,:]
+print(f"x_vec shape {x_vec.shape}, x_vec value: {x_vec}")
+
+# make a prediction
+f_wb = predict(x_vec,w_init, b_init)
+print(f"f_wb shape {f_wb.shape}, prediction: {f_wb}")
+
+```
+
+An alternative specification can handle multiple features and using vectorisation for performance.
+
+```Python
+def predict(x, w, b): 
+    """
+    single predict using linear regression
+    Args:
+      x (ndarray): Shape (n,) example with multiple features
+      w (ndarray): Shape (n,) model parameters   
+      b (scalar):             model parameter 
+      
+    Returns:
+      p (scalar):  prediction
+    """
+    p = np.dot(x, w) + b     
+    return p    
+
+
 ```
 
 Compute the model and plot the results
