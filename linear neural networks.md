@@ -136,17 +136,6 @@ def compute_model_output(x, w, b):
         
     return f_wb
 
-# construct inp
-X_train = np.array([[2104, 5, 1, 45], [1416, 3, 2, 40], [852, 2, 1, 35]])
-y_train = np.array([460, 232, 178])
-
-# get a row from our training data
-x_vec = X_train[0,:]
-print(f"x_vec shape {x_vec.shape}, x_vec value: {x_vec}")
-
-# make a prediction
-f_wb = predict(x_vec,w_init, b_init)
-print(f"f_wb shape {f_wb.shape}, prediction: {f_wb}")
 
 ```
 
@@ -167,6 +156,23 @@ def predict(x, w, b):
     p = np.dot(x, w) + b     
     return p    
 
+# construct input (training) and output data
+X_train = np.array([[2104, 5, 1, 45], [1416, 3, 2, 40], [852, 2, 1, 35]])
+y_train = np.array([460, 232, 178])
+
+# construct weights and bias
+# note the number of weights equals the number of features in x_train
+b_init = 785.1811367994083
+w_init = np.array([ 0.39133535, 18.75376741, -53.36032453, -26.42131618])
+print(f"w_init shape: {w_init.shape}, b_init type: {type(b_init)}")
+
+# get a row from our training data
+x_vec = X_train[0,:]
+print(f"x_vec shape {x_vec.shape}, x_vec value: {x_vec}")
+
+# make a prediction
+f_wb = predict(x_vec,w_init, b_init)
+print(f"f_wb shape {f_wb.shape}, prediction: {f_wb}")
 
 ```
 
