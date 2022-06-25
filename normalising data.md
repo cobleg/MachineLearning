@@ -26,5 +26,6 @@ The feature is rescaled by deducting the mean from each observation and divide b
 $$ x_{z} = \frac{x-\bar{x}}{\sigma} $$
 
 
+The result will be values that are centred around zero and range between -1 and 1.
 
 
