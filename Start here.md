@@ -10,6 +10,7 @@ Key steps are:
 2. Prepare input data sets
 	1. [[Create or obtain data]] 
 	2. [[load data]] 
+	3. [[normalising data]] 
 3. Write script files
 4. Execute and write output files to disk
 

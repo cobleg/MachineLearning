@@ -4,7 +4,7 @@ Once the code and input data are prepared for a DLNN, a new model can be trained
 # Training steps
 Execute the following loop:
 
--   Initialize parameters $(𝐰,𝑏)(w,b)$ 
+-   Initialize parameters $(𝐰,𝑏)$ 
 -   Repeat until done
     -   Compute gradient $𝐠←∂(𝐰,𝑏)\frac{1}{|B|}\Sigma_{𝑖∈}l(𝐱^{𝑖},𝑦^{𝑖},𝐰,𝑏)$ 
     -   Update parameters $(𝐰,𝑏)←(𝐰,𝑏)−𝜂𝐠$
