@@ -29,7 +29,7 @@ $$ x_{z} = \frac{x-\bar{x}}{\sigma} $$
 The result will be values that are centred around zero and range between -1 and 1.
 
 ## Code
-
+Custom code:
 ```python
 
 import numpy as np
@@ -59,3 +59,6 @@ def zscore_normalize_features(X):
 #from sklearn.preprocessing import scale
 #scale(X_orig, axis=0, with_mean=True, with_std=True, copy=True)
 ```
+
+the Scikit-learn library provides a function to do this: [`sklearn.preprocessing.StandardScaler`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.preprocessing "sklearn.preprocessing")
+

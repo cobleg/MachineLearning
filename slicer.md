@@ -1,5 +1,5 @@
 # Overview
-In python, the slicer function is: `[ Start : Stop : Increment ]`
+In [[python]], the slicer function is: `[ Start : Stop : Increment ]`
  An example using a list:
 ```python
 # Intiailise the list
