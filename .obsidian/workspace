@@ -7,12 +7,8 @@
         "id": "831daf980e9c7329",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "batch gradient descent.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "batch gradient descent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "831daf980e9c7329",
   "lastOpenFiles": [
-    "batch gradient descent.md",
-    "gradient descent.md",
-    "loss function.md",
     "Python.md",
-    "linear neural networks.md",
-    "perceptron.md",
-    "normalising data.md",
-    "Numerical transformations.md",
-    "feature engineering.md",
-    "PyTorch.md"
+    "slicer.md",
+    "power transformations.md",
+    "cross-validation.md",
+    "create or obtain data.md",
+    "clustering.md",
+    "category encoding.md",
+    "numerical transformations.md",
+    "principal component analysis.md",
+    "group aggregated values.md"
   ]
 }

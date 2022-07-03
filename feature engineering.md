@@ -6,11 +6,11 @@ According to Wikipedia
 
 # Engineered features
 Type of engineered features are:
-- [[Numerical transformations]]
-- [[Category encoding]]
-- [[Clustering]]
-- [[Group aggregated values]]
-- [[Principal component analysis]]
+- [[numerical transformations]]
+- [[category encoding]]
+- [[clustering]]
+- [[group aggregated values]]
+- [[principal component analysis]]
 
 
 
