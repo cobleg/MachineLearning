@@ -7,12 +7,8 @@
         "id": "831daf980e9c7329",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "linear neural networks.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linear neural networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,6 +85,7 @@
   "active": "831daf980e9c7329",
   "lastOpenFiles": [
     "linear neural networks.md",
+    "perceptron.md",
     "normalising data.md",
     "Numerical transformations.md",
     "feature engineering.md",
@@ -97,7 +93,6 @@
     "Python.md",
     "PyTorch.md",
     "loss function.md",
-    "optimisation algorithms.md",
-    "Cross-validation.md"
+    "optimisation algorithms.md"
   ]
 }

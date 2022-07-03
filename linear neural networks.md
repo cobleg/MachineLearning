@@ -5,14 +5,14 @@
 
 [Difference between linear and nonlinear neural networks?](https://www.kaggle.com/general/196486)
 
-Linear neural networks are similar to linear statistical regression. This is used to predict continuous quantities, e.g. how much, how many of something.
+Linear neural networks are similar to linear statistical regression. This is used to predict continuous quantities, e.g. how much, how many of something. However, there is a [difference between a linear network and a perceptron. The core difference is that the transfer function is linear rather than hard-limiting.](https://au.mathworks.com/help/deeplearning/ug/linear-neural-networks.html) See the definition of a [[perceptron]] here.
 
 One layer in a linear neural network can be thought of as a linear model:
 
 $$ f_{\vec{w},b}(\vec{x}) = \vec{w} \cdot{} \vec{x}+b $$
 where
 $$ \vec{w} = [w_1,w_2,w_3,...,w_n]$$ $$ \vec{x} = [x_1,x_2,x_3,...,x_n]$$
-
+Note that a linear neural network is not the same as a linear regression. 
 # Code
 ## Pytorch
 
