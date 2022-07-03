@@ -35,7 +35,7 @@ def sgd(params, lr, batch_size):  #@save
             param.grad.zero_()
 ```
 
-`lr` is the learning rate
+`lr` is the learning rate 
 
 # Application example
 This code block provides an example

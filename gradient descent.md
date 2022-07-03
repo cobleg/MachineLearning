@@ -1,6 +1,8 @@
 # Overview
 [Gradient descent](https://builtin.com/data-science/gradient-descent) is an optimisation algorithm for finding a local minimum of a differentiable, [convex function](https://en.wikipedia.org/wiki/Convex_function). Gradient descent is simply used in machine learning to find the values of a function's parameters (coefficients) that minimize a [[loss function]] as far as possible.
 
+Note that gradient descent is efficiently implemented as [[batch gradient descent]]. 
+
 # Gradient descent equations
 The equations are:
 
@@ -38,6 +40,8 @@ With the equations defined, the gradient descent algorithm is:
 repeat until convergence {
 $$ w_{s+1} = w_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}x^{(i)}(wx^{(i)}+b-y^{(i)}) $$
 $$ b_{s+1} = b_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}(wx^{(i)}+b-y^{(i)}) $$} stop when change in $w$ and $b$ are close to zero (e.g. less than 0.001)
+
+
 
 # Code
 
@@ -78,7 +82,7 @@ def compute_gradient(x, y, w, b):
         f_wb = w * x[i] + b 
         dj_dw_i = (f_wb - y[i]) * x[i] 
         dj_db_i = f_wb - y[i] 
-        dj_db += dj_db_i # cumultive sum
+        dj_db += dj_db_i # cumulative sum
         dj_dw += dj_dw_i # cumulative sum
     dj_dw = dj_dw / m # calculate the average 
     dj_db = dj_db / m # calculate the average
