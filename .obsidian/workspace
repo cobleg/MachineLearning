@@ -7,8 +7,12 @@
         "id": "831daf980e9c7329",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "loss function.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "loss function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +89,15 @@
   },
   "active": "831daf980e9c7329",
   "lastOpenFiles": [
+    "loss function.md",
+    "Python.md",
     "linear neural networks.md",
     "perceptron.md",
     "normalising data.md",
     "Numerical transformations.md",
     "feature engineering.md",
     "gradient descent.md",
-    "Python.md",
     "PyTorch.md",
-    "loss function.md",
     "optimisation algorithms.md"
   ]
 }

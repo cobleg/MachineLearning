@@ -3,17 +3,18 @@
 
 # Relevant libraries
 Relevant Python libraries are:
-
-`os`: The Python [os library](https://www.linuxscrew.com/python-os) contains tools and functions for interacting with the underlying Operating System being used to execute the Python code.
-`tarfile`: provides read-write capability for tar archive files.
-`zipfile`: ability to work with zip compressed files
-`requests`: provides ability to request a web page or file
+`matplotlib`: library to plot graphs in Python.
 `numpy`: NumPy contains scientific computation functions such as statistical computing. 
+`os`: The Python [os library](https://www.linuxscrew.com/python-os) contains tools and functions for interacting with the underlying Operating System being used to execute the Python code.
 `pandas`:  helps with manipulating, processing, cleaning, and crunching datasets in Python.
+`requests`: provides ability to request a web page or file
  `scikit-learn`: is an open source machine learning library that supports supervised and unsupervised learning, see [Getting started](https://scikit-learn.org/stable/getting_started.html) for details. 
+ `tarfile`: provides read-write capability for tar archive files.
+ `zipfile`: ability to work with zip compressed files
 # Relevant frameworks
 Relevant [python frameworks](https://www.simplilearn.com/python-frameworks-article) are:
 - [[PyTorch]]
+- [TensorFlow](https://www.tensorflow.org/about/) 
 
 # Helper functions
 This section contains custom function recipes that enable various parts of the DLNN process. Helper functions help minimise the manual input required to create a model.
