@@ -47,6 +47,7 @@ There are various architectures used in defining a neural network:
 1. [[linear neural networks]] 
 2. [[softmax regression]] 
 3. [[multilayer perceptron]] 
+4. [[classification]] 
 
 # References
 [Dive into deep learning](https://d2l.ai/index.html)

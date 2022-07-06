@@ -4,10 +4,10 @@
     "type": "split",
     "children": [
       {
-        "id": "831daf980e9c7329",
+        "id": "5ad749ddb94f01aa",
         "type": "leaf",
         "state": {
-          "type": "graph",
+          "type": "empty",
           "state": {}
         }
       }
@@ -82,8 +82,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "831daf980e9c7329",
+  "active": "5ad749ddb94f01aa",
   "lastOpenFiles": [
+    "classification.md",
+    "Start here.md",
     "Python.md",
     "slicer.md",
     "power transformations.md",
@@ -91,8 +93,6 @@
     "create or obtain data.md",
     "clustering.md",
     "category encoding.md",
-    "numerical transformations.md",
-    "principal component analysis.md",
-    "group aggregated values.md"
+    "numerical transformations.md"
   ]
 }
