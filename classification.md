@@ -11,13 +11,60 @@ where $0<g(z)<1$ and $z$ is an index that maps one or more input variables, typi
 
 $$ z= \boldsymbol{w} \cdot \boldsymbol{x} + b $$
 
-There will be a threshold value of $g(z)$ that delineates the difference between the choices (e.g. 0.5). The logistic function belongs to a family of functions called sigmoid functions, chacterised by a `s` shaped function.
+There will be a threshold value of $g(z)$ that delineates the difference between the choices (e.g. 0.5). The logistic function belongs to a family of functions called [sigmoid functions](https://en.wikipedia.org/wiki/Sigmoid_function), chacterised by a `s` shaped function.
 
 The output of $g(z)$ is typically interpreted as a probability of a given choice. A restriction on the output is that the list of output probabilities must sum to exactly 1.
 
 That is $P(g(z)=0)+P(g(z)=1)=1$ 
 
+# Code
 
+
+```python
+import numpy as np
+
+print("Input to exp:", input_val)
+print("Output of exp:", exp_val)
+
+def sigmoid(z):
+    """
+    Compute the sigmoid of z
+
+    Args:
+        z (ndarray): A scalar, numpy array of any size.
+
+    Returns:
+        g (ndarray): sigmoid(z), with the same shape as z
+         
+    """
+
+    g = 1/(1+np.exp(-z))
+   
+    return g
+    
+# Generate an array of evenly spaced values between -10 and 10
+z_tmp = np.arange(-10,11)
+
+# Use the function implemented above to get the sigmoid values
+y = sigmoid(z_tmp)
+
+# Code for pretty printing the two arrays next to each other
+np.set_printoptions(precision=3) 
+print("Input (z), Output (sigmoid(z))")
+print(np.c_[z_tmp, y])
+
+# Plot z vs sigmoid(z)
+%matplotlib widget
+import matplotlib.pyplot as plt
+
+fig,ax = plt.subplots(1,1,figsize=(5,3))
+ax.plot(z_tmp, y, c="b")
+
+ax.set_title("Sigmoid function")
+ax.set_ylabel('sigmoid(z)')
+ax.set_xlabel('z')
+draw_vthresh(ax,0)
+```
 
 
 

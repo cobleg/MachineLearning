@@ -3,6 +3,9 @@ Data normalisation can speed up the model training process. There are various no
 - Feature scaling
 - Mean normalisation
 - Z-score normalisation
+
+*WARNING* Be mindful of [data leakage](https://machinelearningmastery.com/data-leakage-machine-learning/). Make sure any transformations are done after the raw data has been partitioned into: train, validate, and test sets. For example, data minimum and maximum should be calculated separately for the train, validate and test data sets. This will reflect the reality that new data samples in the future will also be different and will provide a more realistic indication of the likely accuracy of the trained model.
+
 # Feature scaling
 Features are variables that are used as input data to train a model. Often the features have different scales, that the data values of each feature lie on different parts of the real number line. For example, Feature 1 ($1,000<x_1<100,000$) and Feature 2 ($-100<x_2<-50$). 
 
