@@ -17,8 +17,10 @@ The output of $g(z)$ is typically interpreted as a probability of a given choice
 
 That is $P(g(z)=0)+P(g(z)=1)=1$ 
 
-# Code
+# Decision boundary
+In designing a classification algorithm, it is useful to consider how to define the [[decision boundary]].
 
+# Code
 
 ```python
 import numpy as np
