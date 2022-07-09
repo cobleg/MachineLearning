@@ -12,7 +12,9 @@ One layer in a linear neural network can be thought of as a linear model:
 $$ f_{\vec{w},b}(\vec{x}) = \vec{w} \cdot{} \vec{x}+b $$
 where
 $$ \vec{w} = [w_1,w_2,w_3,...,w_n]$$ $$ \vec{x} = [x_1,x_2,x_3,...,x_n]$$
-Note that a linear neural network is not the same as a linear regression. 
+Note that a linear neural network is not the same as a [[linear regression]]. 
+
+
 # Code
 ## Pytorch
 

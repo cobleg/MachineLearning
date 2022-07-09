@@ -20,6 +20,17 @@ That is $P(g(z)=0)+P(g(z)=1)=1$
 # Decision boundary
 In designing a classification algorithm, it is useful to consider how to define the [[decision boundary]].
 
+# Cost function for classification models
+The cost function (aka [[loss function]]) is specified as:
+
+$$ L(f_{\boldsymbol{\vec{w}},b}(\boldsymbol{\vec{x}}^{(i)}), y^{i}) = \begin{cases} -log(f_{\boldsymbol{\vec{w}},b}(\boldsymbol{\vec{x}}^{(i)})) \ \ \ \ \ \ \ \ \text{       if } y^{(i)} = 1 \\
+-log(1-f_{\boldsymbol{\vec{w}},b}(\boldsymbol{\vec{x}}^{(i)})) \ \text{     if }y^{(i)} = 0 \end{cases} $$
+where
+$\boldsymbol{\vec{w}}$ is a vector of weights to be estimated
+$\boldsymbol{\vec{x}}^{(i)}$ is a vector of input variables corresponding to sample $i$
+$b$ is the bias
+$y^{i}$ is the target (actual observation) variable corresponding to sample $i$
+
 # Code
 
 ```python
