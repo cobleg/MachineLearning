@@ -1,5 +1,5 @@
 # Overview
-[Gradient descent](https://builtin.com/data-science/gradient-descent) is an optimisation algorithm for finding a local minimum of a differentiable, [convex function](https://en.wikipedia.org/wiki/Convex_function). Gradient descent is simply used in machine learning to find the values of a function's parameters (coefficients) that minimize a [[loss function]] as far as possible.
+[Gradient descent](https://builtin.com/data-science/gradient-descent) is an optimisation algorithm for finding a local minimum of a differentiable, [convex function](https://en.wikipedia.org/wiki/Convex_function). Gradient descent is simply used in machine learning to find the values of a function's parameters (coefficients) that minimize a [[cost function]] as far as possible.
 
 Note that gradient descent is efficiently implemented as [[batch gradient descent]]. 
 
@@ -12,7 +12,7 @@ $$ b_{s+1} = b_s-\alpha \times \frac{\partial}{\partial b}J(w,b) $$
 where:
 $w_s$ is the weight (or slope) parameter at step $s$
 $\alpha >0$ is the learning rate
-$J(w,b)$ is the [[loss function]] (or cost function) , which is a function of the weight ($w$) and bias parameters ($b$). 
+$J(w,b)$ is the [[cost function]] (or cost function) , which is a function of the weight ($w$) and bias parameters ($b$). 
 
 Gradient descent will take progressively smaller steps as the machine learning algorithm approaches a minimum (eighter local or global) since the derivate will be smaller in each step. 
 

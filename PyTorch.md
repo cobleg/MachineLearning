@@ -33,7 +33,7 @@ Parameters:
 See concrete example here: [What is the class definition of nn.Linear in PyTorch?](https://stackoverflow.com/questions/54916135/what-is-the-class-definition-of-nn-linear-in-pytorch)
 
 ## Loss function
-Define a [[loss function]]
+Define a [[cost function]]
 ```python
 loss = nn.MSELoss()
 in_features = train_features.shape[1]
@@ -51,7 +51,7 @@ def get_net():
 `.shape`: provides information about the number of dimensions of an array [Python NumPy shape with examples](https://pythonguides.com/python-numpy-shape/) 
 
 ## Logarithm of the root mean square error
-Calculates the prediction error given the true values and a [[loss function]].
+Calculates the prediction error given the true values and a [[cost function]].
 ```python
 def log_rmse(net, features, labels):
     # To further stabilize the value when the logarithm is taken, set the

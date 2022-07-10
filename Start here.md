@@ -24,7 +24,7 @@ Given that everything needs to be coded first, here are some handy recipes for t
 2. [[initialising model parameters]] 
 3. [[matrix operations]] 
 4. [[optimisation algorithms]] 
-5. [[loss function]] 
+5. [[cost function]] 
 6. [[regularisation]] 
 7. [[dropout]] 
 8. [[distribution shift]] 

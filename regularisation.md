@@ -13,7 +13,7 @@ $$||x||_2 = \sqrt{x_1^2+x_2^2+x_3^2+...+x_n^2}$$
 
 [Norm](https://mathworld.wolfram.com/Norm.html)
 
-The $L_2$ norm is applied to [[loss function]] to act as protection against overfitting. Technically, there is a penalty term added to the loss function that increases as the number of weights increases.
+The $L_2$ norm is applied to [[cost function]] to act as protection against overfitting. Technically, there is a penalty term added to the loss function that increases as the number of weights increases.
 
 That is, given a loss function:
 

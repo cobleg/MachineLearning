@@ -8,7 +8,7 @@ $\boldsymbol{\vec{x}}$ is a vector of input variables
 $b$ is the bias
 
 # Cost function for linear regression
-Fitting a linear model requires an efficient way of calculating the vector of weights $\boldsymbol{\vec{w}}$. One efficient method is to use a cost function (aka [[loss function]]) which is named the: squared error cost function:
+Fitting a linear model requires an efficient way of calculating the vector of weights $\boldsymbol{\vec{w}}$. One efficient method is to use a cost function (aka [[cost function]]) which is named the: squared error cost function:
 
 $$ J(\boldsymbol{\vec{w}}, b) = \frac{1}{m} \sum_{i=1}^{m} \frac{1}{2}(f_{\boldsymbol{w},b}(\boldsymbol{\vec{x}}^{(i)})-y^{(i)})^2$$
 where

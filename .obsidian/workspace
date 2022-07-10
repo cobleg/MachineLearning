@@ -90,14 +90,14 @@
   "active": "5ad749ddb94f01aa",
   "lastOpenFiles": [
     "classification.md",
+    "logistic model.md",
+    "loss function.md",
+    "cost function.md",
+    "Squared Error Cost.md",
     "linear regression.md",
     "linear neural networks.md",
     "decision boundary.md",
     "normalising data.md",
-    "Start here.md",
-    "category encoding.md",
-    "Python.md",
-    "slicer.md",
-    "power transformations.md"
+    "Start here.md"
   ]
 }
