@@ -21,7 +21,7 @@ where
 $\boldsymbol{\vec{w}}$ is a vector of weights to be estimated
 $\boldsymbol{\vec{x}}^{(i)}$ is a vector of input variables corresponding to sample $i$
 $b$ is the bias
-$y^{i}$ is the target (actual observation) variable corresponding to sample $i$
+$y^{(i)}$ is the target (actual observation) variable corresponding to sample $i$
 
 The logistic loss curves for binary target labels are different for each outcome to ensure that the loss function is always convex as shown in this diagram:
 ![[Pasted image 20220710094802.png]]
@@ -37,6 +37,10 @@ $m$ is the number of training examples in the training data set
 $\boldsymbol{\vec{x}}$ is a vector of input data for training
 $\boldsymbol{\vec{w}}$ is a vector of weights
 $b$ is the bias parameter
+
+# Gradient descent for logistic regression
+The [[gradient descent]] algorithm is used to calculate the weights in logistic regression.
+
 
 # Code
 ## Logistic function

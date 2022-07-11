@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "logistic model.md",
+            "file": "gradient descent.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "logistic model.md",
+                "file": "gradient descent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "5ad749ddb94f01aa",
   "lastOpenFiles": [
+    "gradient descent.md",
     "logistic model.md",
     "classification.md",
     "loss function.md",
@@ -97,7 +98,6 @@
     "linear regression.md",
     "linear neural networks.md",
     "decision boundary.md",
-    "normalising data.md",
-    "Start here.md"
+    "normalising data.md"
   ]
 }
