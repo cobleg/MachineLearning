@@ -1,10 +1,20 @@
 # Overview
-Regularization is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting.  The commonly used regularization techniques are:  
+Regularization is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid [[overfitting]].  The commonly used regularization techniques are:  
 1.  L1 regularization
 2.  L2 regularization (aka weight decay)
 3.  Dropout regularization
 
 [Regularization in Machine Learning](https://www.geeksforgeeks.org/regularization-in-machine-learning/)
+
+Regularisation is implemented by adding a penalty term that increases the cost of adding more weights, where more weights are associated with more [[features]]. 
+
+The intuition underpinning regularisation is to encourage small weight values, potentially very close to zero if the added feature does not add any value in terms of reducing the cost. So there is a trade-off between minimising the difference between the target and predicted variables and adding more features to achieve a smaller error.
+
+In essence, this is imposing a benefit-cost evaluation. Adding additional [[features]] can reduce the difference between target and predicted values, while adding the feature increases the cost via the magnitude of the weight. So there must be a net benefit derived from adding the additional feature.
+
+Regularisation algorithms vary by type of model:
+- [[regularised linear model]]
+- [[regularised logistic model]]
 
 ## $L_2$ regularisation
 The $L_2$ is a type of *norm* where a *norm* is a measure of magnitude and is similar to Pythagorus theorem:

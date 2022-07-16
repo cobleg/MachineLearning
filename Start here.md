@@ -1,5 +1,5 @@
 # Objective
-This notebook provides a guide in using [[PyTorch]] for creating and fitting deep learning neural networks.
+This notebook provides a guide in using [[Python]] and [[PyTorch]] for creating and fitting deep learning neural networks.
 
 # Coding
 Deep Learning Neural Networks (DLNN) require set up of the data and scripts to construct and run.
