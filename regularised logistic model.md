@@ -68,3 +68,11 @@ cost_tmp = compute_cost_logistic_reg(X_tmp, y_tmp, w_tmp, b_tmp, lambda_tmp)
 
 print("Regularized cost:", cost_tmp)
 ```
+
+
+## Worked example
+
+```python
+
+
+```
