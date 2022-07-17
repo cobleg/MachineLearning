@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "cost function.md",
+            "file": "logistic model.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cost function.md",
+                "file": "logistic model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "62e54f5d5f637675",
   "lastOpenFiles": [
+    "cost function.md",
     "clustering.md",
     "regularisation.md",
     "overfitting.md",
@@ -97,7 +98,6 @@
     "gradient descent.md",
     "regularised linear model.md",
     "linear model.md",
-    "regularised logistic model.md",
-    "logistic model.md"
+    "regularised logistic model.md"
   ]
 }
