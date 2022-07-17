@@ -190,12 +190,19 @@ def compute_cost(X, y, w, b, lambda_= 1):
       total_cost: (scalar)         cost 
     """
 
-    m, n = X.shape[0]
-    
+    m, n = X.shape
+  
     loss_sum = 0.0
     for i in range(m):
-        z_i = np.dot(X[i],w) + b
-        f_wb_i = sigmoid(z_i)
+        z_wb = 0
+        # loop over each feature
+        for j in range(n):
+            z_wb_ij = np.dot(X[i][j],w[j])
+            z_wb += z_wb_ij
+            
+        # add the bias term
+        z_wb += b
+        f_wb_i = sigmoid(z_wb)
         loss_sum +=  -y[i]*np.log(f_wb_i) - (1-y[i])*np.log(1-f_wb_i)
              
     total_cost = loss_sum / m
@@ -209,5 +216,22 @@ initial_w = np.zeros(n)
 initial_b = 0.
 cost = compute_cost(X_train, y_train, initial_w, initial_b)
 print('Cost at initial w (zeros): {:.3f}'.format(cost))
+
+# Compute and display cost with non-zero w
+test_w = np.array([0.2, 0.2])
+test_b = -24.
+cost = compute_cost(X_train, y_train, test_w, test_b)
+
+print('Cost at test w,b: {:.3f}'.format(cost))
+
+
+# UNIT TESTS
+compute_cost_test(compute_cost)
+```
+
+## Gradient for logistic regression
+
+```python
+
 
 ```
