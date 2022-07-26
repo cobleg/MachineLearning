@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "regularised gradient descent.md",
+            "file": "regularised linear model.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "regularised gradient descent.md",
+                "file": "regularised linear model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "62e54f5d5f637675",
   "lastOpenFiles": [
+    "linear model.md",
+    "regularised gradient descent.md",
     "regularised logistic model.md",
     "logistic model.md",
-    "linear model.md",
     "gradient descent.md",
     "cost function.md",
     "clustering.md",
     "regularisation.md",
     "overfitting.md",
-    "Start here.md",
-    "regularised gradient descent.md"
+    "Start here.md"
   ]
 }

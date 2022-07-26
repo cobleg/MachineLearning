@@ -21,6 +21,16 @@ Hence, the regularised cost function is:
 $$ J(\boldsymbol{\vec{w}}, b)=\frac{1}{2m} \sum_{i=0}^{m-1} (f_{\boldsymbol{\vec{w}}, b}(\boldsymbol{\vec{x}^{(i)}})-y^{(i)})^2 + \frac{\lambda}{2m} \sum_{j=0}^{n-1}w_j^2 $$
 Note that [[gradient descent]] is modified to a [[regularised gradient descent]].
 
+# Process
+The process of a fitting a regularised linear model requires the following sequence:
+1. Prepare data
+2. Define the regularised cost function for linear regression
+3. Initialise the weights, and bias parameters
+4. Set the learning rate and the lambda parameters
+5. Define regularised gradient descent to adjust the parameters
+6. 
+
+
 # Code
 The regularised cost function can be implemented like this:
 
