@@ -52,8 +52,8 @@ $$ b_{s+1} = b_s-\alpha \times \frac{1}{m}\Sigma_{i=1}^{m}(wx^{(i)}+b-y^{(i)}) $
 # Code
 There is custom code below to show the details of implementation. However, in practice the [[Python]] library [sci-kit learn](https://scikit-learn.org/stable/index.html) is used. 
 
-## Gradient linear descent
-Custom code:
+
+## Gradient descent function
 
 ```python
 # Objective: define a basic gradient descent function
@@ -90,6 +90,60 @@ gradient_descent( gradient=lambda v: 2 * v, start = 10.0, learn_rate=0.2, n_iter
 
 ```
 
+## Gradient linear descent
+```python
+# objective: apply gradient descent to a linear regression model
+# source: https://realpython.com/gradient-descent-algorithm-python/
+
+import numpy as np
+
+def ssr_gradient(x, y, b):
+  '''
+  computes the sum of squared residuals
+  Args:
+    x: independent variable 
+    y: dependent variable
+    b: vector of parameters
+  Returns:
+    b_0: bias (or intercept) parameter
+    b_1: weight (or slope) parameter
+    
+  '''
+  res = b[0] + b[1] * x - y
+  b_0 = res.mean()
+  b_1 = (res * x).mean()
+  return b_0, b_1
+
+def gradient_descent(gradient, x, y, start, learn_rate = 0.1, n_iter = 100, tolerance = 1e-06):
+  '''
+  computes gradient vector
+  Args:
+    gradient: a function that returns the gradient of the objetive function being minimised
+    x: independent variable vector
+    y: dependent variable vector
+    start: initial starting value
+    learn_rate: the learning rate (a hyper-parameter)
+    n_iter: total number of iterations
+    tolerance: minimum difference in gradient, arbitrarily close to zero
+  Returns:
+    vector: the gradient vector
+  
+  '''
+  vector = start
+  for _ in range(n_iter):
+    diff = -learn_rate * np.array(gradient(x, y, vector))
+    if np.all(np.abs(diff) <= tolerance):
+      break
+    vector += diff
+  return vector
+
+# Test
+x = np.array([5, 15, 25, 35, 45, 55])
+y = np.array([5, 20, 14, 32, 22, 38])
+
+gradient_descent( gradient = ssr_gradient, x = x, y = y, start=[0.5, 0.5], learn_rate = 0.001 )
+
+```
 
 ```Python
 #Function to calculate the cost
