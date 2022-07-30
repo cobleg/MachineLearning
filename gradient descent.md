@@ -261,6 +261,8 @@ def gradient_descent(X, y, w_in, b_in, alpha, num_iters):
 
 ```
 ## Stochastic gradient descent
+Stochastic gradient descent randomly divides the set of observations into minibatches. For each minibatch, the gradient is computer and the vector is moved. Once all minibatches are used, the [epoch](https://deepchecks.com/glossary/epoch-in-machine-learning/) is finished and move to the next epoch.
+
 Custom code:
 ```python
 def sgd(params, lr, batch_size):  #@save
