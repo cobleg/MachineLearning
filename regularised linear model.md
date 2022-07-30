@@ -25,10 +25,10 @@ Note that [[gradient descent]] is modified to a [[regularised gradient descent]]
 The process of a fitting a regularised linear model requires the following sequence:
 1. Prepare data
 2. Define the regularised cost function for linear regression
-3. Initialise the weights, and bias parameters
-4. Set the learning rate and the lambda parameters
-5. Define regularised gradient descent to adjust the parameters
-6. 
+3. Define regularised gradient descent to adjust the parameters
+4. Initialise the weights, and bias parameters
+5. Set the learning rate and the lambda parameters
+6. Run gradient descent, repeatedly call the cost function until cost achieves a minimum
 
 
 # Code
@@ -68,6 +68,7 @@ def compute_cost_linear_reg(X, y, w, b, lambda_ = 1):
 Test example:
 
 ```python
+import numpy as np
 np.random.seed(1)
 X_tmp = np.random.rand(5,6)
 y_tmp = np.array([0,1,0,1,0])
