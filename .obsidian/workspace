@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "lambda functions.md",
+            "file": "gradient descent.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "lambda functions.md",
+                "file": "gradient descent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "62e54f5d5f637675",
   "lastOpenFiles": [
+    "lambda functions.md",
     "Python.md",
     "gradient descent.md",
     "regularised linear model.md",
@@ -97,7 +98,6 @@
     "regularised logistic model.md",
     "logistic model.md",
     "cost function.md",
-    "clustering.md",
-    "regularisation.md"
+    "clustering.md"
   ]
 }

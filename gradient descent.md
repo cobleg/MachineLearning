@@ -54,6 +54,43 @@ There is custom code below to show the details of implementation. However, in pr
 
 ## Gradient linear descent
 Custom code:
+
+```python
+# Objective: define a basic gradient descent function
+# source: https://realpython.com/gradient-descent-algorithm-python/
+
+import numpy as np
+
+def gradient_descent(gradient, start, learn_rate, n_iter, tolerance=1e-06):
+  """
+  computes gradient 
+  Args:
+    gradient: is the function or any Python callable object that takes a vector and returns the gradient of the function you’re trying to minimize.
+    start: is the point where the algorithm starts its search, given as a sequence (tuple, list, NumPy array, and so on) or scalar (in the case of a one-dimensional problem).
+    learn_rate: is the learning rate that controls the magnitude of the vector update.
+    n_iter: is the number of iterations.
+    tolerance: is the termination criterion
+  Returns:
+    vector: a vector of results
+    
+  """
+
+  vector = start
+  for _ in range(n_iter):
+      diff = -learn_rate * gradient(vector)
+      if np.all(np.abs(diff) <= tolerance):
+        break
+      vector += diff
+  return vector
+  
+  
+# Test function: c = v^2, note first derivative is: 2 * v
+gradient_descent( gradient=lambda v: 2 * v, start = 10.0, learn_rate=0.2, n_iter = 20 )
+
+
+```
+
+
 ```Python
 #Function to calculate the cost
 def compute_cost(x, y, w, b):
