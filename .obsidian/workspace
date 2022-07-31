@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "gradient descent.md",
+            "file": "reinforcement machine learning.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "gradient descent.md",
+                "file": "reinforcement machine learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "62e54f5d5f637675",
   "lastOpenFiles": [
+    "Start here.md",
+    "gradient descent.md",
     "lambda functions.md",
     "Python.md",
-    "gradient descent.md",
     "regularised linear model.md",
     "linear model.md",
     "regularised gradient descent.md",
     "regularised logistic model.md",
     "logistic model.md",
-    "cost function.md",
-    "clustering.md"
+    "cost function.md"
   ]
 }

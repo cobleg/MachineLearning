@@ -1,5 +1,12 @@
 # Objective
-This notebook provides a guide in using [[Python]] and [[PyTorch]] for creating and fitting deep learning neural networks.
+This notebook provides a guide in using [[Python]] and [[PyTorch]] for creating and fitting machine learning models, particularly deep learning neural networks.
+
+# Types of machine learning models
+There are various types of machine learning models:
+1.  [[supervised machine learning]] models
+	1. [[classification]] models
+	2. [[reinforcement machine learning]] models
+2. [[unsupervised machine learning]] models
 
 # Coding
 Deep Learning Neural Networks (DLNN) require set up of the data and scripts to construct and run.
