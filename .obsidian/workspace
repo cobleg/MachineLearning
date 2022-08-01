@@ -90,6 +90,7 @@
   "active": "62e54f5d5f637675",
   "lastOpenFiles": [
     "Start here.md",
+    "reinforcement machine learning.md",
     "gradient descent.md",
     "lambda functions.md",
     "Python.md",
@@ -97,7 +98,6 @@
     "linear model.md",
     "regularised gradient descent.md",
     "regularised logistic model.md",
-    "logistic model.md",
-    "cost function.md"
+    "logistic model.md"
   ]
 }

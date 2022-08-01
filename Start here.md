@@ -5,11 +5,12 @@ This notebook provides a guide in using [[Python]] and [[PyTorch]] for creating 
 There are various types of machine learning models:
 1.  [[supervised machine learning]] models
 	1. [[classification]] models
-	2. [[reinforcement machine learning]] models
+	2. semi-supervised machine learning
+		1. [[reinforcement machine learning]] models
 2. [[unsupervised machine learning]] models
 
 # Coding
-Deep Learning Neural Networks (DLNN) require set up of the data and scripts to construct and run.
+Machine learning models require set up of the data and scripts to construct and run.
 
 ## Set up steps
 Key steps are:
