@@ -21,6 +21,12 @@ There are several components to the architecture of reinforcement learning:
 - Action
 - Observed state
 
+## Policy
+The agent is typically a neural network that takes the state of the environment aas the input and produces a policy as an output. The policy is typically framed as a set of pseudo-probabilities within a [[classification]] model. 
+
+## Environment
+The environment is constructed as a stochastic, nonlinear dynamical system that evolves as a Markov Decision Process.
+
 
 # References
 
