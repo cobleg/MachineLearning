@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "98a37bcae93e01ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Label propagation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reinforcement machine learning.md",
+                "file": "Label propagation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,10 +108,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "62e54f5d5f637675",
+  "active": "98a37bcae93e01ed",
   "lastOpenFiles": [
-    "Start here.md",
     "reinforcement machine learning.md",
+    "Start here.md",
     "gradient descent.md",
     "lambda functions.md",
     "Python.md",
