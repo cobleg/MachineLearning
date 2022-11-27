@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "Label propagation.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -105,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "98a37bcae93e01ed",
   "lastOpenFiles": [

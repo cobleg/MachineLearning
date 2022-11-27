@@ -8,3 +8,4 @@ Common use cases are:
 - Labelling of large data sets
 - Fraud detection where rare discoveries of fraud can be used to search for undiscovered cases of fraud.
 
+[@zhouLearningLocalGlobal2003]
