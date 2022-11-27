@@ -10,10 +10,14 @@ Common use cases are:
 
 ## Graphs for label propagation
 A graph algorithm can be added to guide label propagation. This requires several steps:
-1. Construct a graph adjacency matrix  [@AdjacencyMatrix2022] to indicate which nodes are connected via  edges using a [Euclidean distance](Euclidean-distance.md) measure
+1. Construct a graph adjacency matrix  [@AdjacencyMatrix2022] to indicate which nodes are connected via  edges 
 2. Calculate the affinity matrix $W$ defined as $W_{ij}=exp(-||x_i-x_j||^2/2\sigma^2)$  if $i \ne j$ and $W_{ii}=0$ 
 3. Iterate $F(t+1)=\alpha SF(t)+(1-\alpha)Y$ until convergence, where $\alpha$ is a parameter in $(0,1)$.
 4. Let $F^{*}$ denote the limit of the sequence $\{F(t)\}$. Label each point $x_i$ as a label $y_i=arg max_{j \le c} F_{ij}^{*}$  
+
+####  Notes about the algorithm
+The parameter $\alpha$ enables a weighted average of information across time. When $\alpha=1$ only the $SF(t)$ part is active, ignoring information in $Y$. The opposite occurs when $\alpha=0$. 
+$F^{*}$ is the steady state value and this determines the label value. 
 
 [@zhouLearningLocalGlobal2003]
 
