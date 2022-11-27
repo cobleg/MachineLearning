@@ -103,17 +103,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f17032be210ddee8",
+  "active": "62e54f5d5f637675",
   "lastOpenFiles": [
+    "Euclidean-distance.md",
+    "Label propagation using graphs.md",
     "optimisation algorithms.md",
     "reinforcement machine learning.md",
-    "Label propagation using graphs.md",
     "Start here.md",
     "gradient descent.md",
     "lambda functions.md",
     "Python.md",
     "regularised linear model.md",
-    "linear model.md",
-    "regularised gradient descent.md"
+    "linear model.md"
   ]
 }
